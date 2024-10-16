@@ -1,0 +1,161 @@
+.layout-container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .sidenav {
+    width: 250px; 
+    background-color: #1e2a38;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+  }
+  
+  .profile-info {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-info .logo1 {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    border-radius:4% ;
+  }
+  
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .nav-item {
+    display: flex; 
+    align-items: center;
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(218, 190, 36);
+  }
+  
+  .home1 {
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  .home0{
+    color: white;
+  }
+  .info0{
+    color: white;
+  }
+  .info1{
+    color: white;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: -35px;/*local*/
+  }
+  
+  /* Adjustments for the info item */
+  .info1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex-grow: 1;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .user-photo {
+     width: auto;
+     max-width: 60px;
+     height: auto;
+     border-radius: 50%;
+     object-fit: cover; 
+     margin-right: 82px;
+     margin-left: 15px;
+     margin-bottom: 8px;
+  }
+  .icons{
+     margin-left: 100px;
+     margin-top: -55px;
+  }
+  .small-text {
+    font-size: 0.67em;
+    color: rgb(8, 8, 8);
+    /* margin-left: 8px; */
+    font-weight: normal;
+  }
+  .title{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 18px;/*local*/
+  }
+  .user-info{
+    font-weight: bold;
+  }
+  .icon-spacing {
+    margin-right: 16px;
+  }
+  
+  
+  .icons .icon-spacing:last-child {
+    margin-right: 0;
+  }
+  .invest{
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 768px) {
+      .sidenav {
+          width: auto; /* Allow sidenav to take full width on small screens */
+      }
+  
+      .header {
+          left: auto; /* Reset left position on small screens */
+      }
+  
+      .profile-info .logo1 {
+          max-width: 150px; /* Adjust logo size for smaller screens */
+      }
+  
+      .user-photo {
+          max-width: 70px; /* Adjust user photo size for smaller screens */
+      }
+  }
+  

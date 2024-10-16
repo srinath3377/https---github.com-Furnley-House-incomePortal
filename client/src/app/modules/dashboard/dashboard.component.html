@@ -1,0 +1,165 @@
+<div class="investment-forecaster">
+    <app-layout></app-layout>
+     <!-- <app-default></app-default> -->
+    <div class="button-container" style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+      <button mat-raised-button color="warn" class="download-button" (click)="downloadPDF()">
+          <mat-icon>download</mat-icon>
+          Download
+      </button>
+    </div>
+    <form [formGroup]="investmentForm" (ngSubmit)="onSubmit()">
+      <div class="input-chart-container" fxLayout="row wrap" fxLayoutGap="20px">
+        <section class="input-section" fxFlex="50" fxFlex.lt-md="100">
+          <mat-card class="card">
+            <mat-card-title class="title">Personal details</mat-card-title>
+            <mat-card-content>
+              <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Client Name(s)</mat-label>
+                  <input matInput type="text" formControlName="clientName" placeholder="Enter client name" required>
+                  <mat-error *ngIf="investmentForm.get('clientName')?.hasError('required') && investmentForm.get('clientName')?.touched">
+                    Client name is required.
+                  </mat-error>
+                </mat-form-field>
+  
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Policy Type</mat-label>
+                  <mat-select formControlName="policyType" required>
+                    <mat-option value="ISA">ISA</mat-option>
+                    <mat-option value="GIA">GIA</mat-option>
+                    <mat-option value="SIPP">SIPP</mat-option>
+                    <mat-option value="Overall Portfolio">Overall Portfolio</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="investmentForm.get('policyType')?.hasError('required') && investmentForm.get('policyType')?.touched">
+                    Policy type is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+          </mat-card>
+  
+          <mat-card class="card">
+            <mat-card-title class="title">Investment details</mat-card-title>
+            <mat-card-content>
+              <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Initial Investment Amount</mat-label>
+                  <input matInput type="text" formControlName="investmentAmount" placeholder="£450,000.00" required>
+                  <mat-error *ngIf="investmentForm.get('investmentAmount')?.hasError('required') && investmentForm.get('investmentAmount')?.touched">
+                    Investment amount is required.
+                  </mat-error>
+                </mat-form-field>
+  
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Initial Income Level (Per Annum)</mat-label>
+                  <input matInput type="text" formControlName="incomeLevel" placeholder="£27,000.00" required>
+                  <mat-error *ngIf="investmentForm.get('incomeLevel')?.hasError('required') && investmentForm.get('incomeLevel')?.touched">
+                    Income level is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Increase in Withdrawals (Per Annum)</mat-label>
+                  <mat-select formControlName="withdrawalsIncrease" required>
+                    <mat-option value="0.00%">0.00%</mat-option>
+                    <mat-option value="0.50%">0.50%</mat-option>
+                    <mat-option value="1.00%">1.00%</mat-option>
+                    <mat-option value="1.50%">1.50%</mat-option>
+                    <mat-option value="2.00%">2.00%</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="investmentForm.get('withdrawalsIncrease')?.hasError('required') && investmentForm.get('withdrawalsIncrease')?.touched">
+                    Withdrawals increase is required.
+                  </mat-error>
+                </mat-form-field>
+  
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Risk Profile</mat-label>
+                  <mat-select formControlName="riskProfile" required>
+                    <mat-option value="40">40</mat-option>
+                    <mat-option value="50">50</mat-option>
+                    <mat-option value="60">60</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="investmentForm.get('riskProfile')?.hasError('required') && investmentForm.get('riskProfile')?.touched">
+                    Risk profile is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+          </mat-card>
+  
+          <mat-card class="card">
+            <mat-card-title class="title">Forecast returns data</mat-card-title>
+            <mat-card-content>
+              <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Return from Structures</mat-label>
+                  <input matInput type="text" formControlName="returnStructures" placeholder="5.80%" required>
+                  <mat-error *ngIf="investmentForm.get('returnStructures')?.hasError('required') && investmentForm.get('returnStructures')?.touched">
+                    Return from structures is required.
+                  </mat-error>
+                </mat-form-field>
+  
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Net Return on Growth Engine</mat-label>
+                  <input matInput type="text" formControlName="netReturn" placeholder="5.40%" required>
+                  <mat-error *ngIf="investmentForm.get('netReturn')?.hasError('required') && investmentForm.get('netReturn')?.touched">
+                    Net return on growth engine is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
+                <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
+                  <mat-label>Return on Cash</mat-label>
+                  <input matInput type="text" formControlName="returnOnCash" placeholder="1.00%" required>
+                  <mat-error *ngIf="investmentForm.get('returnOnCash')?.hasError('required') && investmentForm.get('returnOnCash')?.touched">
+                    Return on cash is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="button-container" style="margin-top: 20px; display: flex; justify-content: flex-end;">
+                <button mat-raised-button color="primary" type="submit">Calculate</button>
+                <button mat-raised-button color="warn" style="margin-left: 10px;" (click)="resetForm()">Reset</button>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </section>
+  
+        <div class="chart-section" fxFlex="50" fxFlex.lt-md="100">
+          <mat-card style="margin-bottom: 20px;">
+            <mat-card-title class="title">Investment Projection</mat-card-title>
+            <mat-card-content>
+              <canvas id="investmentChart" width="400" height="200"></canvas>
+            </mat-card-content>
+          </mat-card>
+  
+          <mat-card>
+            <div class="lifetime" style="display: flex; align-items: center; margin-top: 10px;">
+              <div class="icon-container" style="margin-right: 8px;">
+                <mat-icon class="large-icon">hourglass_empty</mat-icon>
+              </div>
+              <div style="margin-left: 20px;font-size: 10px;">
+                <h2>Estimated Portfolio Lifetime</h2>
+                <h1>23 Years</h1>
+              </div>
+            </div>
+          </mat-card>
+          
+          <div class="footer-note">
+            <p>
+              <span class="underline">Please note:</span>
+            </p>
+            <p>
+              Charges have the effect of reducing the investment growth. The figures above are only an example and are not guaranteed. They are not minimum and maximum amounts.
+            </p>
+            <p>
+              Past performance of an investment is not a reliable indicator of future results. Market conditions can change rapidly, and historical performance does not guarantee future returns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

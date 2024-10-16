@@ -1,0 +1,143 @@
+.investment-forecaster {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #d9dee2;
+    margin-top: 102px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.logo {
+    width: 250px;
+}
+.card {
+    margin-bottom: 20px; /* Space between cards */
+}
+
+h2 {
+    color: #0e0d0d;
+}
+
+.input-chart-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 22px; 
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-section mat-card {
+    max-width: 450px; 
+    width: 100%; 
+}
+
+.input-section h2 {
+    color: #050505;
+}
+
+.chart-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 18px;
+}
+
+.footer-note {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.investment-forecaster .form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.investment-forecaster .form-row mat-form-field {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px; 
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    .investment-forecaster .form-row mat-form-field {
+        flex: 1 1 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .input-chart-container {
+        flex-direction: column; 
+        gap: 16px; 
+    }
+
+    .header {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; 
+    }
+
+    .chart-section,
+    .input-section {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+        text-align: center; 
+    }
+
+    .small-text {
+        font-size: 0.7em; 
+        text-align: center; 
+        color: rgb(8, 8, 8); 
+    }
+
+    .form-row {
+        gap: 12px; 
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .footer-note {
+        font-size: 10px; 
+        text-align: center;
+        padding-top: 5px; 
+        margin-top: 15px; 
+    }
+}
+
+
+.large-icon {
+   font-size: 64px;
+   width: auto; 
+   height:auto; 
+   max-width :100%; 
+}
+
+.icon-container {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   min-width :64px;
+   min-height :64px;
+}

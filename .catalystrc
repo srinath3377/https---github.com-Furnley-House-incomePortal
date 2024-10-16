@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "2382000000791799",
+      "name": "Income-Portal",
+      "domain": {
+        "id": "30025589404",
+        "name": "income-portal-20097717838.development"
+      },
+      "timezone": "Europe/Warsaw",
+      "env": [
+        {
+          "idx": 1,
+          "id": "20097717838",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
