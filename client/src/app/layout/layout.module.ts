@@ -21,6 +21,8 @@ import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { DefaultComponent } from './components/default/default.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -49,7 +51,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatTabsModule,
     MatProgressSpinnerModule,
     MatSelectModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   exports:[
     HeaderComponent,

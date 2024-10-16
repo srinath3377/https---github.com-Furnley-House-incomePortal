@@ -8,8 +8,14 @@ import { SidenavComponent } from './layout/components/sidenav/sidenav.component'
 
 const routes: Routes = [
   { path: '', 
-    pathMatch: 'full', 
-    redirectTo: 'authentication/signin' 
+    component: LayoutComponent,
+    children: [{
+      path: 'dashboard',
+      loadChildren: () => 
+        import('./modules/dashboard/dashboard.module').then(
+          m => m.DashboardModule),
+          component : DashboardComponent
+    }]
   },{
     path: "authentication/signin",
     component: SigninComponent
@@ -19,13 +25,11 @@ const routes: Routes = [
       import('./authentication-module/authentication/authentication.module').then(
         m => m.AuthenticationModule),
         component : SigninComponent
-  },{
-    path: 'dashboard',
-    loadChildren: () => 
-      import('./modules/dashboard/dashboard.module').then(
-        m => m.DashboardModule),
-        component : DashboardComponent
   },
+  { path: '**', 
+    pathMatch: 'full', 
+    redirectTo: 'dashboard' 
+  }
 
   // {
   //   path: "dashboard",
