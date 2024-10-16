@@ -14654,3 +14654,41 @@ Response Headers: {"server":"ZGS","date":"Wed, 16 Oct 2024 14:51:16 GMT","conten
 [debug] [2024-10-16T15:21:30.282Z] : proxy closed
 [debug] [2024-10-16T15:21:37.557Z] : proxy closed
 [debug] [2024-10-16T15:21:45.589Z] : proxy closed
+[info] [2024-10-16T15:23:25.978Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.08a73b784beb006b.hot-update.js       | main    | 158.63 kB | 
+[Angular-plugin]: runtime.js, runtime.08a73b784beb006b.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-16T15:23:25.920Z - Hash: f5b657949760b498 - Time: 982ms
+[info] [2024-10-16T15:23:25.981Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-16T15:24:03.510Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.f5b657949760b498.hot-update.js       | main    | 155.37 kB | 
+[Angular-plugin]: runtime.js, runtime.f5b657949760b498.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-16T15:24:03.475Z - Hash: 0451027c5eef73c5 - Time: 700ms
+[info] [2024-10-16T15:24:03.512Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-16T15:24:12.612Z] : proxy closed
+[info] [2024-10-16T15:24:40.319Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.0451027c5eef73c5.hot-update.js       | main    | 155.36 kB | 
+[Angular-plugin]: runtime.js, runtime.0451027c5eef73c5.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-16T15:24:40.283Z - Hash: 30c7cb18b6bba02a - Time: 989ms
+[info] [2024-10-16T15:24:40.327Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-16T15:37:38.987Z] : Shutting down server
+[debug] [2024-10-16T15:37:39.021Z] : proxy closed
+[info] [2024-10-16T15:37:39.049Z] : 
+[info] [2024-10-16T15:37:39.050Z] : √ Shutdown complete
+[debug] [2024-10-16T15:37:39.051Z] : NO ERRORS REGISTERED
+[debug] [2024-10-16T15:37:39.052Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-10-16T15:37:39.052Z] : TOTAL DURATION OF COMMAND EXEC : 2785812
