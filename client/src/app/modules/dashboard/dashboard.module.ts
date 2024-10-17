@@ -18,6 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from 'src/app/layout/layout.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
 
@@ -43,7 +44,7 @@ import { LayoutModule } from 'src/app/layout/layout.module';
     MatProgressSpinnerModule,
     MatSelectModule,
     RouterModule,
-    LayoutModule
+    DashboardRoutingModule
   ],
   exports:[
     DashboardComponent

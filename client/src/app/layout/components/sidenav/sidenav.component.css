@@ -1,49 +1,56 @@
 .sidenav {
-    width: 250px;
-    background-color: #1e2a38;
-    color: #fff;
-    overflow-y: auto;
-    position: fixed;
-  }
-  
-  .profile-info {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .profile-info .logo1 {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 4%;
-  }
-  
-  .avatar-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .nav-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-  }
-  
-  .nav-item:hover {
-    background-color: rgb(218, 190, 36);
-  }
-  
-  .home1, .home0, .info0, .info1 {
-    color: white;
-  }
-  
-  .info1 {
-    margin-left: 30px;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-top: -35px;
-  }
-  
+  width: 250px;
+  background-color: #1e2a38;
+  color: #fff;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.profile-info {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-info .logo1 {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4%;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+.nav-item:hover {
+  background-color: rgb(218, 190, 36);
+}
+
+.home0, .home1, .info0, .info1 {
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.info1 {
+  margin-left: 19px;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 10px;
+  max-width: 150px; /* Ensures the text doesn't overflow */
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}

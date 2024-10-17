@@ -14692,3 +14692,1115 @@ Response Headers: {"server":"ZGS","date":"Wed, 16 Oct 2024 14:51:16 GMT","conten
 [debug] [2024-10-16T15:37:39.051Z] : NO ERRORS REGISTERED
 [debug] [2024-10-16T15:37:39.052Z] : EXEC ENDED with event: serve, message: success
 [debug] [2024-10-16T15:37:39.052Z] : TOTAL DURATION OF COMMAND EXEC : 2785812
+[debug] [2024-10-17T05:55:21.278Z] : 
+[debug] [2024-10-17T05:55:21.281Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T05:55:21.281Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\SrinathK\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-10-17T05:55:21.281Z] : CLI Version:  1.17.6
+[debug] [2024-10-17T05:55:21.282Z] : Platform:     win32
+[debug] [2024-10-17T05:55:21.282Z] : Node Version: v20.15.1
+[debug] [2024-10-17T05:55:21.282Z] : Time:         Thu Oct 17 2024 06:55:21 GMT+0100 (British Summer Time)
+[debug] [2024-10-17T05:55:21.282Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T05:55:21.283Z] : 
+[debug] [2024-10-17T05:55:22.366Z] : > authorizing via signed-in user option
+[debug] [2024-10-17T05:55:22.366Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-10-17T05:55:22.381Z] : > refreshing access token <
+[debug] [2024-10-17T05:55:22.382Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T05:55:23.009Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 05:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=334bcd9bb9ea435c7d20cac1410a20b1; Path=/; Secure; HttpOnly","iamcsr=4b6be051-220f-4699-862b-594ebb41249e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4b6be051-220f-4699-862b-594ebb41249e;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T05:55:23.022Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799 
+
+[debug] [2024-10-17T05:55:23.652Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 05:55:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=a052db8513635b995306a5da931ed5a5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=734d1a42-4930-4181-82fd-9deac3cc8590;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=734d1a42-4930-4181-82fd-9deac3cc8590;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T05:55:23.656Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/environment 
+
+[debug] [2024-10-17T05:55:23.854Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 05:55:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=d8e7df99a684d94371e15b34b6da82db; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=cc90e96c-14e2-4b60-9f87-ec13c860608b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cc90e96c-14e2-4b60-9f87-ec13c860608b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T05:55:24.139Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-10-17T05:55:24.577Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 05:55:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=e0274d12104082a7196b52eb4ffec9d4; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5909a115-645f-4c98-a3bf-4e2af70d1ce6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5909a115-645f-4c98-a3bf-4e2af70d1ce6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T05:55:24.579Z] : unknown eol undefined hence skipping check
+[info] [2024-10-17T05:55:24.927Z] : 
+[info] [2024-10-17T05:55:24.928Z] : i Client[client]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2024-10-17T05:55:24.928Z] : 
+[info] [2024-10-17T05:55:25.345Z] : 
+[info] [2024-10-17T05:55:25.346Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-10-17T05:55:25.346Z] : i income_portal_function: http://localhost:3000/server/income_portal_function/
+[info] [2024-10-17T05:55:25.347Z] : 
+[info] [2024-10-17T05:55:25.347Z] : 
+[info] [2024-10-17T05:55:25.348Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-10-17T05:55:25.348Z] : i client[client]: http://localhost:3000/app/
+[info] [2024-10-17T05:55:25.349Z] : 
+[info] [2024-10-17T05:55:27.338Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2024-10-17T05:55:34.929Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                      | Names         |  Raw Size
+[Angular-plugin]: vendor.js                                | vendor        |   5.45 MB | 
+[Angular-plugin]: polyfills.js                             | polyfills     | 317.53 kB | 
+[Angular-plugin]: styles.css, styles.js                    | styles        | 298.95 kB | 
+[Angular-plugin]: main.js                                  | main          | 137.71 kB | 
+[Angular-plugin]: runtime.js                               | runtime       |  52.58 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                                          | Initial Total |   6.23 MB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                         | Names         |  Raw Size
+[Angular-plugin]: node_modules_canvg_lib_index_es_js.js    | canvg         | 432.25 kB | 
+[Angular-plugin]: node_modules_dompurify_dist_purify_js.js | dompurify     |  65.96 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:55:34.782Z - Hash: 840b4822ddf5b0cc - Time: 5802ms
+[info] [2024-10-17T05:55:34.932Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause
+[info] [2024-10-17T05:55:34.934Z] : [Angular-plugin]:  optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules
+[info] [2024-10-17T05:55:34.935Z] : [Angular-plugin]: \canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\src\app\modules\dashboard\dashboard.component.ts depends on 'html2canvas'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T05:55:34.937Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2024-10-17T05:55:34.938Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T05:55:35.079Z] : [Angular-plugin]: Please visit this url to access client: http://localhost:3000/app/
+[info] [2024-10-17T05:55:35.667Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: runtime.js, runtime.840b4822ddf5b0cc.hot-update.js | runtime | 52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 6 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:55:35.644Z - Hash: 58f64060dc5231a2 - Time: 552ms
+[info] [2024-10-17T05:55:35.668Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T05:56:56.786Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.58f64060dc5231a2.hot-update.js       | main    | 141.09 kB | 
+[Angular-plugin]: runtime.js, runtime.58f64060dc5231a2.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:56:56.773Z - Hash: 99f5974d8c03cb08 - Time: 1424ms
+[info] [2024-10-17T05:56:56.787Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T05:56:59.570Z] : proxy closed
+[info] [2024-10-17T05:57:10.564Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.99f5974d8c03cb08.hot-update.js       | main    | 141.09 kB | 
+[Angular-plugin]: runtime.js, runtime.99f5974d8c03cb08.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:57:10.539Z - Hash: 581ea6cd2b6e255a - Time: 382ms
+[info] [2024-10-17T05:57:10.566Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T05:57:13.514Z] : [Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:57:13.506Z - Hash: 581ea6cd2b6e255a - Time: 298ms
+[info] [2024-10-17T05:57:13.516Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T05:57:27.431Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.581ea6cd2b6e255a.hot-update.js       | main    | 140.59 kB | 
+[Angular-plugin]: runtime.js, runtime.581ea6cd2b6e255a.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T05:57:27.412Z - Hash: e63b8919b311500e - Time: 529ms
+[info] [2024-10-17T05:57:27.433Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:00:21.127Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.e63b8919b311500e.hot-update.js       | main    | 176.11 kB | 
+[Angular-plugin]: runtime.js, runtime.e63b8919b311500e.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:00:21.104Z - Hash: 68efda48cb27a17a - Time: 771ms
+[info] [2024-10-17T06:00:21.128Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:03:02.318Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.68efda48cb27a17a.hot-update.js       | main    | 140.73 kB | 
+[Angular-plugin]: runtime.js, runtime.68efda48cb27a17a.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:03:02.307Z - Hash: 221a789f2bbdd201 - Time: 614ms
+[info] [2024-10-17T06:03:02.319Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:03:35.263Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.221a789f2bbdd201.hot-update.js       | main    | 140.66 kB | 
+[Angular-plugin]: runtime.js, runtime.221a789f2bbdd201.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:03:35.245Z - Hash: b58cbb8d118e3f92 - Time: 344ms
+[info] [2024-10-17T06:03:35.264Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:03:45.689Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.b58cbb8d118e3f92.hot-update.js       | main    | 140.70 kB | 
+[Angular-plugin]: runtime.js, runtime.b58cbb8d118e3f92.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:03:45.664Z - Hash: ef55832d2d05bfee - Time: 358ms
+[info] [2024-10-17T06:03:45.690Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:03:53.239Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.ef55832d2d05bfee.hot-update.js       | main    | 140.73 kB | 
+[Angular-plugin]: runtime.js, runtime.ef55832d2d05bfee.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:03:53.223Z - Hash: ff08322066ad3e9f - Time: 319ms
+[info] [2024-10-17T06:03:53.240Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:06:20.129Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.ff08322066ad3e9f.hot-update.js       | main    | 140.73 kB | 
+[Angular-plugin]: runtime.js, runtime.ff08322066ad3e9f.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:06:20.118Z - Hash: 966152045035c54f - Time: 415ms
+[info] [2024-10-17T06:06:20.130Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:10:03.819Z] : 
+[debug] [2024-10-17T06:10:03.820Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:10:03.821Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\SrinathK\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-10-17T06:10:03.821Z] : CLI Version:  1.17.6
+[debug] [2024-10-17T06:10:03.821Z] : Platform:     win32
+[debug] [2024-10-17T06:10:03.821Z] : Node Version: v20.15.1
+[debug] [2024-10-17T06:10:03.821Z] : Time:         Thu Oct 17 2024 07:10:03 GMT+0100 (British Summer Time)
+[debug] [2024-10-17T06:10:03.821Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:10:03.821Z] : 
+[debug] [2024-10-17T06:10:04.461Z] : > authorizing via signed-in user option
+[debug] [2024-10-17T06:10:04.461Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-10-17T06:10:04.473Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799 
+
+[debug] [2024-10-17T06:10:05.128Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:10:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=35d86ad0e72007e7e796e0f812d673ce; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fa77237e-a9da-44d0-989d-b89259d9efba;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fa77237e-a9da-44d0-989d-b89259d9efba;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:10:05.133Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/environment 
+
+[debug] [2024-10-17T06:10:05.333Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:10:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=a052db8513635b995306a5da931ed5a5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c89f1508-0bf8-45dd-af05-95032f7a7e62;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c89f1508-0bf8-45dd-af05-95032f7a7e62;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:10:05.483Z] : Build folder already exists, starting cleanup
+[debug] [2024-10-17T06:10:05.536Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-10-17T06:10:05.761Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:10:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=d8e7df99a684d94371e15b34b6da82db; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=e3d9ec8b-b07b-40aa-ba91-20972cc28901;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e3d9ec8b-b07b-40aa-ba91-20972cc28901;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:10:05.764Z] : unknown eol undefined hence skipping check
+[info] [2024-10-17T06:10:06.328Z] : 
+[info] [2024-10-17T06:10:06.329Z] : i Client[client]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2024-10-17T06:10:06.330Z] : 
+[info] [2024-10-17T06:10:06.636Z] : 
+[info] [2024-10-17T06:10:06.636Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-10-17T06:10:06.637Z] : i income_portal_function: http://localhost:3000/server/income_portal_function/
+[info] [2024-10-17T06:10:06.637Z] : 
+[info] [2024-10-17T06:10:06.637Z] : 
+[info] [2024-10-17T06:10:06.637Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-10-17T06:10:06.637Z] : i client[client]: http://localhost:3000/app/
+[info] [2024-10-17T06:10:06.637Z] : 
+[info] [2024-10-17T06:10:07.881Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2024-10-17T06:10:14.768Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                        | Names                                        |  Raw Size
+[Angular-plugin]: vendor.js                                                  | vendor                                       |   5.45 MB | 
+[Angular-plugin]: polyfills.js                                               | polyfills                                    | 317.53 kB | 
+[Angular-plugin]: styles.css, styles.js                                      | styles                                       | 298.95 kB | 
+[Angular-plugin]: main.js                                                    | main                                         | 116.33 kB | 
+[Angular-plugin]: runtime.js                                                 | runtime                                      |  52.58 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                                                            | Initial Total                                |   6.21 MB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                           | Names                                        |  Raw Size
+[Angular-plugin]: node_modules_canvg_lib_index_es_js.js                      | canvg                                        | 432.25 kB | 
+[Angular-plugin]: node_modules_dompurify_dist_purify_js.js                   | dompurify                                    |  65.96 kB | 
+[Angular-plugin]: src_app_modules_authentication_authentication_module_ts.js | modules-authentication-authentication-module |  20.24 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:10:14.741Z
+[info] [2024-10-17T06:10:14.770Z] : [Angular-plugin]: m - Hash: c6861b7c86e1f450 - Time: 5689ms
+[info] [2024-10-17T06:10:14.772Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause
+[info] [2024-10-17T06:10:14.775Z] : [Angular-plugin]:  optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules
+[info] [2024-10-17T06:10:14.777Z] : [Angular-plugin]: \canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\src\app\modules\dashboard\dashboard.component.ts depends on 'html2canvas'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:10:14.782Z] : [Angular-plugin]: 
+[Angular-plugin]: ./src/app/app.module.ts:6:0-100 - Error: Module not found: Error: Can't resolve './authentication-module/authentication/authentication.module' in 'C:\Users\SrinathK\Documents\income\client\src\app'
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:1:1 - error NG8001: 'router-outlet' is not a known element:
+[Angular-plugin]: 1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
+[Angular-plugin]: 2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 1 <router-outlet></router-outlet>[Angular-plugin]: 
+[Angular-plugin]:   ~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:5:16[Angular-plugin]: 
+[Angular-plugin]:     5   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.module.ts:6:38 - error TS2307: Cannot find module './authentication-module/authentication/authentication.module' or its corresponding type declarations.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 6 import { AuthenticationModule } from './authentication-module/authentication/authentication.module';[Angular-plugin]: 
+[Angular-plugin]:                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.module.ts:14:12 - error NG1010: Value
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:10:14.784Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2024-10-17T06:10:14.786Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2024-10-17T06:10:37.844Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files | Names   |  Raw Size
+[Angular-plugin]: main.js             | main    | 137.02 kB | 
+[Angular-plugin]: runtime.js          | runtime |  52.58 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:10:37.827Z - Hash: 50dc036281b349c0 - Time: 727ms
+[info] [2024-10-17T06:10:37.845Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:10:37.877Z] : [Angular-plugin]: Please visit this url to access client: http://localhost:3000/app/
+[debug] [2024-10-17T06:11:13.014Z] : proxy closed
+[info] [2024-10-17T06:12:55.121Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.50dc036281b349c0.hot-update.js       | main    | 143.36 kB | 
+[Angular-plugin]: runtime.js, runtime.50dc036281b349c0.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:12:55.108Z - Hash: 3329a4dc72f1fc58 - Time: 480ms
+[info] [2024-10-17T06:12:55.148Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:13:26.376Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.3329a4dc72f1fc58.hot-update.js       | main    | 140.50 kB | 
+[Angular-plugin]: runtime.js, runtime.3329a4dc72f1fc58.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:13:26.349Z - Hash: 2db9b642771af253 - Time: 409ms
+[info] [2024-10-17T06:13:26.377Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:13:32.032Z] : proxy closed
+[info] [2024-10-17T06:13:45.228Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.2db9b642771af253.hot-update.js       | main    | 140.24 kB | 
+[Angular-plugin]: runtime.js, runtime.2db9b642771af253.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:13:45.219Z - Hash: 174753b99f5700c4 - Time: 364ms
+[info] [2024-10-17T06:13:45.230Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app-routing.module.ts:7:7 - error TS2322: Type '({ path: string; loadChildren: () => Promise<Routes | Type<any> | NgModuleFactory<any> | DefaultExport<Type<any>> | DefaultExport<Routes> | typeof AuthenticationModule>; component: typeof SigninComponent; } | { ...; } | { ...; } | undefined)[]' is not assignable to type 'Routes'.[Angular-plugin]: 
+[Angular-plugin]:   Type '{ path: string; loadChildren: () => Promise<Routes | Type<any> | NgModuleFactory<any> | DefaultExport<Type<any>> | DefaultExport<Routes> | typeof AuthenticationModule>; component: typeof SigninComponent; } | { ...; } | { ...; } | undefined' is not assignable to type 'Route'.[Angular-plugin]: 
+[Angular-plugin]:     Type 'undefined' is not assignable to type 'Route'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 7 const routes: Routes = [[Angular-plugin]: 
+[Angular-plugin]:         ~~~~~~[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:13:45.232Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2024-10-17T06:14:01.035Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.2db9b642771af253.hot-update.js       | main    | 140.22 kB | 
+[Angular-plugin]: runtime.js, runtime.2db9b642771af253.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:14:01.010Z - Hash: ae464c01fde0527f - Time: 419ms
+[info] [2024-10-17T06:14:01.036Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:14:12.258Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.ae464c01fde0527f.hot-update.js       | main    | 140.50 kB | 
+[Angular-plugin]: runtime.js, runtime.ae464c01fde0527f.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:14:12.238Z - Hash: 138f7f9f2b1a6f19 - Time: 333ms
+[info] [2024-10-17T06:14:12.260Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:14:25.863Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.138f7f9f2b1a6f19.hot-update.js       | main    | 140.46 kB | 
+[Angular-plugin]: runtime.js, runtime.138f7f9f2b1a6f19.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:14:25.843Z - Hash: b56c4ca9d451fa21 - Time: 388ms
+[info] [2024-10-17T06:14:25.864Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:14:29.821Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.b56c4ca9d451fa21.hot-update.js       | main    | 140.50 kB | 
+[Angular-plugin]: runtime.js, runtime.b56c4ca9d451fa21.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:14:29.811Z - Hash: 5fc80585eccb0c0a - Time: 313ms
+[info] [2024-10-17T06:14:29.823Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:15:40.507Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.5fc80585eccb0c0a.hot-update.js       | main    | 146.28 kB | 
+[Angular-plugin]: runtime.js, runtime.5fc80585eccb0c0a.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:15:40.495Z - Hash: 9be5113955340106 - Time: 543ms
+[info] [2024-10-17T06:15:40.508Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:15:45.610Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.9be5113955340106.hot-update.js       | main    | 139.57 kB | 
+[Angular-plugin]: runtime.js, runtime.9be5113955340106.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:15:45.592Z - Hash: 287f37967d7af61c - Time: 344ms
+[info] [2024-10-17T06:15:45.611Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:15:57.076Z] : [Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:15:57.055Z - Hash: 287f37967d7af61c - Time: 336ms
+[info] [2024-10-17T06:15:57.078Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:17:09.175Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.287f37967d7af61c.hot-update.js       | main    | 140.33 kB | 
+[Angular-plugin]: runtime.js, runtime.287f37967d7af61c.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:17:09.153Z - Hash: f9766369b9d689eb - Time: 1022ms
+[info] [2024-10-17T06:17:09.177Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:17:17.002Z] : proxy closed
+[info] [2024-10-17T06:17:25.041Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.f9766369b9d689eb.hot-update.js       | main    | 140.49 kB | 
+[Angular-plugin]: runtime.js, runtime.f9766369b9d689eb.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:17:25.029Z - Hash: 41f661ce89e7b9ca - Time: 446ms
+[info] [2024-10-17T06:17:25.043Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:17:30.081Z] : Shutting down server
+[debug] [2024-10-17T06:17:30.097Z] : proxy closed
+[debug] [2024-10-17T06:17:30.097Z] : proxy closed
+[info] [2024-10-17T06:17:30.124Z] : 
+[info] [2024-10-17T06:17:30.125Z] : √ Shutdown complete
+[debug] [2024-10-17T06:17:30.126Z] : NO ERRORS REGISTERED
+[debug] [2024-10-17T06:17:30.127Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-10-17T06:17:30.127Z] : TOTAL DURATION OF COMMAND EXEC : 445677
+[debug] [2024-10-17T06:17:32.075Z] : 
+[debug] [2024-10-17T06:17:32.076Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:17:32.076Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\SrinathK\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-10-17T06:17:32.076Z] : CLI Version:  1.17.6
+[debug] [2024-10-17T06:17:32.077Z] : Platform:     win32
+[debug] [2024-10-17T06:17:32.077Z] : Node Version: v20.15.1
+[debug] [2024-10-17T06:17:32.077Z] : Time:         Thu Oct 17 2024 07:17:32 GMT+0100 (British Summer Time)
+[debug] [2024-10-17T06:17:32.077Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:17:32.077Z] : 
+[debug] [2024-10-17T06:17:32.626Z] : > authorizing via signed-in user option
+[debug] [2024-10-17T06:17:32.627Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-10-17T06:17:32.637Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799 
+
+[debug] [2024-10-17T06:17:33.284Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:17:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=35d86ad0e72007e7e796e0f812d673ce; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b95e020a-4263-46fc-8744-247ec5ef31d6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b95e020a-4263-46fc-8744-247ec5ef31d6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:17:33.291Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/environment 
+
+[debug] [2024-10-17T06:17:33.481Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:17:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=a052db8513635b995306a5da931ed5a5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=9432c241-ddca-4cb2-b161-b07ac35197fa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9432c241-ddca-4cb2-b161-b07ac35197fa;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:17:33.632Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-10-17T06:17:33.828Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:17:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=d8e7df99a684d94371e15b34b6da82db; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3a89a6e4-d3ad-44d3-b7ef-fa6a673b5cf5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3a89a6e4-d3ad-44d3-b7ef-fa6a673b5cf5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:17:33.830Z] : unknown eol undefined hence skipping check
+[info] [2024-10-17T06:17:34.224Z] : 
+[info] [2024-10-17T06:17:34.226Z] : i Client[client]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2024-10-17T06:17:34.226Z] : 
+[info] [2024-10-17T06:17:34.506Z] : 
+[info] [2024-10-17T06:17:34.507Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-10-17T06:17:34.508Z] : i income_portal_function: http://localhost:3000/server/income_portal_function/
+[info] [2024-10-17T06:17:34.508Z] : 
+[info] [2024-10-17T06:17:34.509Z] : 
+[info] [2024-10-17T06:17:34.509Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-10-17T06:17:34.510Z] : i client[client]: http://localhost:3000/app/
+[info] [2024-10-17T06:17:34.510Z] : 
+[info] [2024-10-17T06:17:35.523Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2024-10-17T06:17:40.983Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                      | Names         |  Raw Size
+[Angular-plugin]: vendor.js                                | vendor        |   5.45 MB | 
+[Angular-plugin]: polyfills.js                             | polyfills     | 317.53 kB | 
+[Angular-plugin]: styles.css, styles.js                    | styles        | 298.95 kB | 
+[Angular-plugin]: main.js                                  | main          | 137.09 kB | 
+[Angular-plugin]: runtime.js                               | runtime       |  52.58 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                                          | Initial Total |   6.23 MB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                         | Names         |  Raw Size
+[Angular-plugin]: node_modules_canvg_lib_index_es_js.js    | canvg         | 432.25 kB | 
+[Angular-plugin]: node_modules_dompurify_dist_purify_js.js | dompurify     |  65.96 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:17:40.880Z - Hash: 1fa4d0d4b0069577 - Time: 4364ms
+[info] [2024-10-17T06:17:40.987Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause
+[info] [2024-10-17T06:17:40.989Z] : [Angular-plugin]:  optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules
+[info] [2024-10-17T06:17:40.990Z] : [Angular-plugin]: \canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\src\app\modules\dashboard\dashboard.component.ts depends on 'html2canvas'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:17:40.991Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2024-10-17T06:17:40.992Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:17:41.086Z] : [Angular-plugin]: Please visit this url to access client: http://localhost:3000/app/
+[debug] [2024-10-17T06:17:41.619Z] : proxy closed
+[debug] [2024-10-17T06:17:42.012Z] : proxy closed
+[info] [2024-10-17T06:17:58.444Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.1fa4d0d4b0069577.hot-update.js       | main    | 140.51 kB | 
+[Angular-plugin]: runtime.js, runtime.1fa4d0d4b0069577.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:17:58.428Z - Hash: fb653314d09caacf - Time: 1063ms
+[info] [2024-10-17T06:17:58.446Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:18:01.099Z] : proxy closed
+[info] [2024-10-17T06:18:26.460Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.fb653314d09caacf.hot-update.js       | main    | 140.35 kB | 
+[Angular-plugin]: runtime.js, runtime.fb653314d09caacf.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:18:26.440Z - Hash: 2f27a59a49f92eeb - Time: 415ms
+[info] [2024-10-17T06:18:26.461Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:19:02.697Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.2f27a59a49f92eeb.hot-update.js       | main    | 139.98 kB | 
+[Angular-plugin]: runtime.js, runtime.2f27a59a49f92eeb.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:19:02.679Z - Hash: ac3cc77f1e2150a3 - Time: 456ms
+[info] [2024-10-17T06:19:02.699Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:23:20.683Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.ac3cc77f1e2150a3.hot-update.js       | main    | 139.24 kB | 
+[Angular-plugin]: runtime.js, runtime.ac3cc77f1e2150a3.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:23:20.666Z - Hash: 72374bf6c6630460 - Time: 547ms
+[info] [2024-10-17T06:23:20.685Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:23:49.859Z] : proxy closed
+[debug] [2024-10-17T06:23:51.236Z] : proxy closed
+[debug] [2024-10-17T06:23:55.284Z] : proxy closed
+[info] [2024-10-17T06:27:01.560Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.72374bf6c6630460.hot-update.js       | main    | 149.23 kB | 
+[Angular-plugin]: runtime.js, runtime.72374bf6c6630460.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:27:01.548Z - Hash: e197815dda3a9e11 - Time: 613ms
+[info] [2024-10-17T06:27:01.561Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:27:12.950Z] : [Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:27:12.938Z - Hash: e197815dda3a9e11 - Time: 457ms
+[info] [2024-10-17T06:27:12.951Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:28:32.490Z] : [Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:28:32.479Z - Hash: e197815dda3a9e11 - Time: 451ms
+[info] [2024-10-17T06:28:32.491Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:29:19.311Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.e197815dda3a9e11.hot-update.js       | main    | 141.53 kB | 
+[Angular-plugin]: runtime.js, runtime.e197815dda3a9e11.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:29:19.299Z - Hash: a370ac4964cb20a6 - Time: 554ms
+[info] [2024-10-17T06:29:19.313Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:35:33.740Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.a370ac4964cb20a6.hot-update.js       | main    | 141.87 kB | 
+[Angular-plugin]: runtime.js, runtime.a370ac4964cb20a6.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:35:33.727Z - Hash: b52f3a59a82c6b34 - Time: 487ms
+[info] [2024-10-17T06:35:33.741Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:35:37.375Z] : proxy closed
+[debug] [2024-10-17T06:36:00.931Z] : proxy closed
+[info] [2024-10-17T06:38:37.789Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.b52f3a59a82c6b34.hot-update.js       | main    | 145.28 kB | 
+[Angular-plugin]: runtime.js, runtime.b52f3a59a82c6b34.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:38:37.779Z - Hash: 5a01c586b51cfe4f - Time: 581ms
+[info] [2024-10-17T06:38:37.791Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:38:55.591Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.5a01c586b51cfe4f.hot-update.js       | main    | 147.20 kB | 
+[Angular-plugin]: runtime.js, runtime.5a01c586b51cfe4f.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:38:55.586Z - Hash: e429982b0ab597c2 - Time: 325ms
+[info] [2024-10-17T06:38:55.595Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/layout/components/header/header.component.html:7:46 - error TS2339: Property 'home' does not exist on type 'HeaderComponent'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 7     <mat-list-item class="nav-item" (click)="home()">[Angular-plugin]: 
+[Angular-plugin]:                                                ~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/layout/components/header/header.component.ts:7:16[Angular-plugin]: 
+[Angular-plugin]:     7   templateUrl: './header.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component HeaderComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/layout/components/header/header.component.html:11:46 - error TS2339: Property 'saveAndNext' does not exist on type 'HeaderComponent'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 11     <mat-list-item class="nav-item" (click)="saveAndNext()">[Angular-plugin]: 
+[Angular-plugin]:                                                 ~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/layout/components/header/header.component.ts:7:16[Angular-plugin]: 
+[Angular-plugin]:     7   templateUrl: './header.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component HeaderComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:38:55.596Z] : [Angular-plugin]: 
+[Angular-plugin]: × Failed to compile.
+[info] [2024-10-17T06:39:04.819Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.5a01c586b51cfe4f.hot-update.js       | main    | 146.12 kB | 
+[Angular-plugin]: runtime.js, runtime.5a01c586b51cfe4f.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:39:04.801Z - Hash: 3d9560c5a17af08c - Time: 384ms
+[info] [2024-10-17T06:39:04.821Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:39:13.615Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.3d9560c5a17af08c.hot-update.js       | main    | 145.28 kB | 
+[Angular-plugin]: runtime.js, runtime.3d9560c5a17af08c.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:39:13.594Z - Hash: 2a19300db84b0c0b - Time: 350ms
+[info] [2024-10-17T06:39:13.617Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:39:42.494Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.2a19300db84b0c0b.hot-update.js       | main    | 141.61 kB | 
+[Angular-plugin]: runtime.js, runtime.2a19300db84b0c0b.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:39:42.482Z - Hash: efb5ac9f3539f820 - Time: 450ms
+[info] [2024-10-17T06:39:42.495Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:42:20.489Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.efb5ac9f3539f820.hot-update.js       | main    | 177.96 kB | 
+[Angular-plugin]: runtime.js, runtime.efb5ac9f3539f820.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:42:20.467Z - Hash: 1048c62035d12106 - Time: 1000ms
+[info] [2024-10-17T06:42:20.490Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:42:52.832Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.1048c62035d12106.hot-update.js       | main    | 145.22 kB | 
+[Angular-plugin]: runtime.js, runtime.1048c62035d12106.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:42:52.811Z - Hash: afc1976d6460f176 - Time: 1023ms
+[info] [2024-10-17T06:42:52.833Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:44:19.228Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.afc1976d6460f176.hot-update.js       | main    | 141.40 kB | 
+[Angular-plugin]: runtime.js, runtime.afc1976d6460f176.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:44:19.218Z - Hash: d25e5064e0a812d9 - Time: 522ms
+[info] [2024-10-17T06:44:19.229Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:44:35.525Z] : Shutting down server
+[debug] [2024-10-17T06:44:35.556Z] : proxy closed
+[info] [2024-10-17T06:44:35.583Z] : 
+[info] [2024-10-17T06:44:35.584Z] : √ Shutdown complete
+[debug] [2024-10-17T06:44:35.585Z] : NO ERRORS REGISTERED
+[debug] [2024-10-17T06:44:35.585Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-10-17T06:44:35.586Z] : TOTAL DURATION OF COMMAND EXEC : 1622968
+[debug] [2024-10-17T06:44:37.376Z] : 
+[debug] [2024-10-17T06:44:37.378Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:44:37.378Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\SrinathK\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-10-17T06:44:37.378Z] : CLI Version:  1.17.6
+[debug] [2024-10-17T06:44:37.379Z] : Platform:     win32
+[debug] [2024-10-17T06:44:37.379Z] : Node Version: v20.15.1
+[debug] [2024-10-17T06:44:37.379Z] : Time:         Thu Oct 17 2024 07:44:37 GMT+0100 (British Summer Time)
+[debug] [2024-10-17T06:44:37.379Z] : ----------------------------------------------------------------------
+[debug] [2024-10-17T06:44:37.379Z] : 
+[debug] [2024-10-17T06:44:38.043Z] : > authorizing via signed-in user option
+[debug] [2024-10-17T06:44:38.043Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-10-17T06:44:38.055Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799 
+
+[debug] [2024-10-17T06:44:38.861Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:44:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=a052db8513635b995306a5da931ed5a5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=a19abace-2612-4ca3-841f-f930730b672c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a19abace-2612-4ca3-841f-f930730b672c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:44:38.864Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/environment 
+
+[debug] [2024-10-17T06:44:39.098Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:44:38 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=d8e7df99a684d94371e15b34b6da82db; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=102f554c-09a9-43e6-83ef-3d9ef05c6008;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=102f554c-09a9-43e6-83ef-3d9ef05c6008;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:44:39.291Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.eu/baas/v1/project/2382000000791799/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-10-17T06:44:39.533Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:44:38 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_df2a6cada2=e0274d12104082a7196b52eb4ffec9d4; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=2e57cb88-c314-4e22-8b20-3ace965ce54e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2e57cb88-c314-4e22-8b20-3ace965ce54e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:44:39.535Z] : unknown eol undefined hence skipping check
+[info] [2024-10-17T06:44:39.930Z] : 
+[info] [2024-10-17T06:44:39.931Z] : i Client[client]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2024-10-17T06:44:39.931Z] : 
+[info] [2024-10-17T06:44:40.323Z] : 
+[info] [2024-10-17T06:44:40.323Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-10-17T06:44:40.324Z] : i income_portal_function: http://localhost:3000/server/income_portal_function/
+[info] [2024-10-17T06:44:40.324Z] : 
+[info] [2024-10-17T06:44:40.325Z] : 
+[info] [2024-10-17T06:44:40.325Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-10-17T06:44:40.325Z] : i client[client]: http://localhost:3000/app/
+[info] [2024-10-17T06:44:40.326Z] : 
+[info] [2024-10-17T06:44:41.752Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2024-10-17T06:44:49.099Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                      | Names         |  Raw Size
+[Angular-plugin]: vendor.js                                | vendor        |   5.45 MB | 
+[Angular-plugin]: polyfills.js                             | polyfills     | 317.53 kB | 
+[Angular-plugin]: styles.css, styles.js                    | styles        | 298.95 kB | 
+[Angular-plugin]: main.js                                  | main          | 138.61 kB | 
+[Angular-plugin]: runtime.js                               | runtime       |  52.58 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                                          | Initial Total |   6.23 MB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                         | Names         |  Raw Size
+[Angular-plugin]: node_modules_canvg_lib_index_es_js.js    | canvg         | 432.25 kB | 
+[Angular-plugin]: node_modules_dompurify_dist_purify_js.js | dompurify     |  65.96 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:44:48.957Z - Hash: 5f89c21561cce99f - Time: 6118ms
+[info] [2024-10-17T06:44:49.104Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause
+[info] [2024-10-17T06:44:49.108Z] : [Angular-plugin]:  optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules
+[info] [2024-10-17T06:44:49.109Z] : [Angular-plugin]: \canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: C:\Users\SrinathK\Documents\income\client\src\app\modules\dashboard\dashboard.component.ts depends on 'html2canvas'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-10-17T06:44:49.112Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2024-10-17T06:44:49.114Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:44:49.207Z] : [Angular-plugin]: Please visit this url to access client: http://localhost:3000/app/
+[info] [2024-10-17T06:45:10.560Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.5f89c21561cce99f.hot-update.js       | main    | 141.25 kB | 
+[Angular-plugin]: runtime.js, runtime.5f89c21561cce99f.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:45:10.541Z - Hash: bb4080c2bf748314 - Time: 1400ms
+[info] [2024-10-17T06:45:10.562Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:45:31.653Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.bb4080c2bf748314.hot-update.js       | main    | 141.25 kB | 
+[Angular-plugin]: runtime.js, runtime.bb4080c2bf748314.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:45:31.628Z - Hash: ce76e111a6fcc204 - Time: 505ms
+[info] [2024-10-17T06:45:31.654Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:47:23.423Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.ce76e111a6fcc204.hot-update.js       | main    | 146.42 kB | 
+[Angular-plugin]: runtime.js, runtime.ce76e111a6fcc204.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:47:23.399Z - Hash: 8fb40449f0400c7e - Time: 725ms
+[info] [2024-10-17T06:47:23.425Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:47:53.090Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.8fb40449f0400c7e.hot-update.js       | main    | 146.57 kB | 
+[Angular-plugin]: runtime.js, runtime.8fb40449f0400c7e.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:47:53.068Z - Hash: 8b8ac9052d01e3de - Time: 660ms
+[info] [2024-10-17T06:47:53.092Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:49:14.211Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.8b8ac9052d01e3de.hot-update.js       | main    | 146.57 kB | 
+[Angular-plugin]: runtime.js, runtime.8b8ac9052d01e3de.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:49:14.197Z - Hash: fc161ad60353017d - Time: 908ms
+[info] [2024-10-17T06:49:14.212Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:52:00.070Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.fc161ad60353017d.hot-update.js       | main    | 148.03 kB | 
+[Angular-plugin]: runtime.js, runtime.fc161ad60353017d.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:52:00.056Z - Hash: b9b786ace52f6cd7 - Time: 449ms
+[info] [2024-10-17T06:52:00.071Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:52:15.694Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.b9b786ace52f6cd7.hot-update.js       | main    | 147.47 kB | 
+[Angular-plugin]: runtime.js, runtime.b9b786ace52f6cd7.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:52:15.680Z - Hash: 4e123f8694fce9aa - Time: 573ms
+[info] [2024-10-17T06:52:15.695Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:52:22.851Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.4e123f8694fce9aa.hot-update.js       | main    | 147.45 kB | 
+[Angular-plugin]: runtime.js, runtime.4e123f8694fce9aa.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:52:22.832Z - Hash: e0dd52aaecdddea2 - Time: 372ms
+[info] [2024-10-17T06:52:22.852Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:54:23.812Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.e0dd52aaecdddea2.hot-update.js       | main    | 147.59 kB | 
+[Angular-plugin]: runtime.js, runtime.e0dd52aaecdddea2.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:54:23.789Z - Hash: b328fe6a811b1d4a - Time: 784ms
+[info] [2024-10-17T06:54:23.814Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:54:24.435Z] : [Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:54:24.417Z - Hash: b328fe6a811b1d4a - Time: 522ms
+[info] [2024-10-17T06:54:24.436Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[info] [2024-10-17T06:55:09.295Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.b328fe6a811b1d4a.hot-update.js       | main    | 147.46 kB | 
+[Angular-plugin]: runtime.js, runtime.b328fe6a811b1d4a.hot-update.js | runtime |  52.92 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-10-17T06:55:09.283Z - Hash: ab2511f1c95e07f9 - Time: 531ms
+[info] [2024-10-17T06:55:09.296Z] : [Angular-plugin]: 
+[Angular-plugin]: √ Compiled successfully.
+[debug] [2024-10-17T06:55:22.621Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.623Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:22.968Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.969Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:22.970Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.970Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:22.971Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.972Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:22.973Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.974Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:22.975Z] : > refreshing access token <
+[debug] [2024-10-17T06:55:22.976Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.eu/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-10-17T06:55:23.201Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=4ba13688e9b4e9512538534cde151d6b; Path=/; Secure; HttpOnly","iamcsr=752fc8a8-5ffe-4d7b-bcc3-28ba28f8d8c7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=752fc8a8-5ffe-4d7b-bcc3-28ba28f8d8c7;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:55:23.528Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=4ba13688e9b4e9512538534cde151d6b; Path=/; Secure; HttpOnly","iamcsr=450df6a1-206d-429c-bc48-4ab89e2d8011;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=450df6a1-206d-429c-bc48-4ab89e2d8011;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:55:23.543Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=334bcd9bb9ea435c7d20cac1410a20b1; Path=/; Secure; HttpOnly","iamcsr=69ae9692-4517-4eb6-9ea3-df027b941e70;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=69ae9692-4517-4eb6-9ea3-df027b941e70;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:55:23.554Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=334bcd9bb9ea435c7d20cac1410a20b1; Path=/; Secure; HttpOnly","iamcsr=2666d9b0-7eea-479d-9e2e-ce6c52e33194;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2666d9b0-7eea-479d-9e2e-ce6c52e33194;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:55:23.564Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=4ba13688e9b4e9512538534cde151d6b; Path=/; Secure; HttpOnly","iamcsr=42cdcc1e-2af6-4c96-b536-20f5f76e7a7c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=42cdcc1e-2af6-4c96-b536-20f5f76e7a7c;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-17T06:55:23.579Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 17 Oct 2024 06:55:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1924","connection":"keep-alive","set-cookie":["zalb_d4bcc0a499=8347d5312b1491981425918ab8a37d8a; Path=/; Secure; HttpOnly","iamcsr=ff0e378a-255b-4a03-8294-e7ae3b4ccfca;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ff0e378a-255b-4a03-8294-e7ae3b4ccfca;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-10-17T06:55:57.666Z] : Shutting down server
+[debug] [2024-10-17T06:55:57.700Z] : proxy closed
+[info] [2024-10-17T06:55:57.729Z] : 
+[info] [2024-10-17T06:55:57.730Z] : √ Shutdown complete
+[debug] [2024-10-17T06:55:57.731Z] : NO ERRORS REGISTERED
+[debug] [2024-10-17T06:55:57.731Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-10-17T06:55:57.731Z] : TOTAL DURATION OF COMMAND EXEC : 679703
