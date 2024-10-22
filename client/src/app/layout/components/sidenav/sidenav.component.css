@@ -1,5 +1,5 @@
 .sidenav {
-  width: 250px;
+  width: 280px;
   background-color: #1e2a38;
   color: #fff;
   overflow-y: auto;
@@ -16,6 +16,7 @@
   max-width: 200px;
   height: auto;
   border-radius: 4%;
+  margin-top: 25px
 }
 
 .avatar-container {
@@ -41,6 +42,9 @@
 .home0, .home1, .info0, .info1 {
   color: white;
   font-weight: bold;
+  /* margin-left: 16px; */
+}
+.home1{
   margin-left: 20px;
 }
 
@@ -49,8 +53,18 @@
   font-weight: bold;
   font-size: 0.9em;
   margin-top: 10px;
-  max-width: 150px; /* Ensures the text doesn't overflow */
-  /* overflow: hidden; */
+  max-width: 150px;
   text-overflow: ellipsis;
   line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .sidenav {
+    width: 250px; /* narrower for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .sidenav {
+    width: 280px; /* wider for larger screens */
+  }
 }

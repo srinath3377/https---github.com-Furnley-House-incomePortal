@@ -1,6 +1,4 @@
 <div class="investment-forecaster">
-    <!-- <app-layout></app-layout> -->
-     <!-- <app-default></app-default> -->
     <div class="button-container" style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
       <button mat-raised-button color="warn" class="download-button" (click)="downloadPDF()">
           <mat-icon>download</mat-icon>
@@ -44,7 +42,7 @@
               <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
                 <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
                   <mat-label>Initial Investment Amount</mat-label>
-                  <input matInput type="text" formControlName="investmentAmount" placeholder="£450,000.00" required>
+                  <input matInput type="text" formControlName="investmentAmount" placeholder="Eg: £450,000.00" required>
                   <mat-error *ngIf="investmentForm.get('investmentAmount')?.hasError('required') && investmentForm.get('investmentAmount')?.touched">
                     Investment amount is required.
                   </mat-error>
@@ -52,7 +50,7 @@
   
                 <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
                   <mat-label>Initial Income Level (Per Annum)</mat-label>
-                  <input matInput type="text" formControlName="incomeLevel" placeholder="£27,000.00" required>
+                  <input matInput type="text" formControlName="incomeLevel" placeholder="Eg: £27,000.00" required>
                   <mat-error *ngIf="investmentForm.get('incomeLevel')?.hasError('required') && investmentForm.get('incomeLevel')?.touched">
                     Income level is required.
                   </mat-error>
@@ -95,7 +93,7 @@
               <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
                 <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
                   <mat-label>Return from Structures</mat-label>
-                  <input matInput type="text" formControlName="returnStructures" placeholder="5.80%" required>
+                  <input matInput type="text" formControlName="returnStructures" placeholder="Eg: 5.80%" required>
                   <mat-error *ngIf="investmentForm.get('returnStructures')?.hasError('required') && investmentForm.get('returnStructures')?.touched">
                     Return from structures is required.
                   </mat-error>
@@ -103,7 +101,7 @@
   
                 <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
                   <mat-label>Net Return on Growth Engine</mat-label>
-                  <input matInput type="text" formControlName="netReturn" placeholder="5.40%" required>
+                  <input matInput type="text" formControlName="netReturn" placeholder="Eg: 5.40%" required>
                   <mat-error *ngIf="investmentForm.get('netReturn')?.hasError('required') && investmentForm.get('netReturn')?.touched">
                     Net return on growth engine is required.
                   </mat-error>
@@ -113,14 +111,14 @@
               <div class="form-row" fxLayout="row wrap" fxLayoutGap="20px">
                 <mat-form-field appearance="outline" fxFlex="50" fxFlex.lt-md="100">
                   <mat-label>Return on Cash</mat-label>
-                  <input matInput type="text" formControlName="returnOnCash" placeholder="1.00%" required>
+                  <input matInput type="text" formControlName="returnOnCash" placeholder="Eg: 1.00%" required>
                   <mat-error *ngIf="investmentForm.get('returnOnCash')?.hasError('required') && investmentForm.get('returnOnCash')?.touched">
                     Return on cash is required.
                   </mat-error>
                 </mat-form-field>
               </div>
   
-              <div class="button-container" style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <div class="button-container">
                 <button mat-raised-button color="primary" type="submit">Calculate</button>
                 <button mat-raised-button color="warn" style="margin-left: 10px;" (click)="resetForm()">Reset</button>
               </div>
@@ -129,7 +127,7 @@
         </section>
   
         <div class="chart-section" fxFlex="50" fxFlex.lt-md="100">
-          <mat-card style="margin-bottom: 20px;">
+          <mat-card style="margin-bottom: 20px; margin-top: -20px;">
             <mat-card-title class="title">Investment Projection</mat-card-title>
             <mat-card-content>
               <canvas id="investmentChart" width="400" height="200"></canvas>
@@ -137,16 +135,17 @@
           </mat-card>
   
           <mat-card>
-            <div class="lifetime" style="display: flex; align-items: center; margin-top: 10px;">
-              <div class="icon-container" style="margin-right: 8px;">
-                <mat-icon class="large-icon">hourglass_empty</mat-icon>
-              </div>
-              <div style="margin-left: 20px;font-size: 10px;">
-                <h2>Estimated Portfolio Lifetime</h2>
-                <h1>23 Years</h1>
-              </div>
+            <div class="lifetime">
+                <div class="icon-container">
+                  <h2>Estimated Portfolio Lifetime</h2>
+                </div>
+                <div class="lifetimelogo">
+                 <img class="large-icon" src="assets\images\hourglass1.png" alt="Furnley House Logo">
+                  <!-- <mat-icon class="large-icon">hourglass_full</mat-icon> -->
+                    <h1 style="margin-top: -58px;">23 Years</h1>
+                </div>
             </div>
-          </mat-card>
+        </mat-card>        
           
           <div class="footer-note">
             <p>

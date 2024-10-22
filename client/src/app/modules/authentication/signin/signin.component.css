@@ -1,283 +1,101 @@
-/* .signin {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  /* background-color: #1e2a38; */
   overflow: hidden;
 }
 
-.signin-card {
-  position: absolute;
-  left: 15vw;
-  padding: 52px 40px;
-  border-radius: 20px;
-  top: 50%;
-  transform: translate(0, -50%);
-  height: 50vh;
-  width: 30vw;
-  min-width: 500px;
-  max-width: 700px;
-  min-height: 550px;
-}
-
-@media (min-width: 2400px) {
-  .signin-card {
-    min-height: 600px;
-  }
-}
-
-@media (min-width: 2900px) {
-  .signin-card {
-    min-height: 630px;
-  }
-}
-
-.signin-card-title {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.signin-card-content {
-  margin-top: 2.5rem;
-}
-
-.signin-card-content-form {
-  min-width: 150px;
+.login-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 55px;
+  max-width: 330px;
+  margin: 0 auto;
   width: 100%;
-  margin-top: 2rem;
+  overflow: hidden;
 }
 
-.input-full-width {
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 275px;
+  margin-bottom: 18px;
+  margin-left: 0px;
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: -75px;
+}
+
+.mat-form-field {
   width: 100%;
-  margin-bottom: 1rem;
 }
 
-.validation-error {
-  color: var(--furnley-red);
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
+.emailId,
+.passwordId {
+  width: 100%;
 }
 
-.signin-card-actions {
-  justify-content: center;
+.remember-forgot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .forgot-password {
-  text-align: center;
-  margin-top: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 }
 
-.forgot-password a {
-  color: var(--furnley-blue);
+.forgot-password:hover {
+  text-decoration: underline;
 }
 
-:host ::ng-deep .mat-mdc-text-field-wrapper {
-  border-radius: 20px;
+.sign-in-button-container {
+  margin-top: 30px;
 }
 
-:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  background-color: var(--default-bg-color);
+.sign-in-button-container button {
+  background-color: #273f41;
+  color: white;
 }
 
-:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
-  border-bottom-color: var(--furnley-blue);
+.sign-in-button-container button:hover {
+  background-color: #02282b;
 }
 
-:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label,
-:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label--float-above {
-  color: var(--furnley-blue);
+.sign {
+  margin-right: 8px;
 }
 
-:host ::ng-deep .mat-mdc-card-header-text {
-  text-align: center;
-  width: 100%;
+.mat-form-field-outline {
+  border-radius: 8px;
 }
 
-:host ::ng-deep .mdc-line-ripple:before {
-  content: none !important;
+.mat-form-field-outline-thick .mat-form-field-outline-start,
+.mat-form-field-outline-thick .mat-form-field-outline-end {
+  border-radius: 8px;
 }
 
-@media (min-width: 2048px) and (max-width: 2548px) {
-  .signin-card {
-    font-size: 1.2rem;
-    height: 60vh;
-  }
-
-  .signin-card-title {
-    font-size: 2.5rem;
-  }
-
-  .signin-card-actions-btn {
-    font-size: 1.3rem !important;
-    padding: 1.8rem 2.5rem;
-  }
-
-  .input-full-width {
-    margin-bottom: 1.5rem !important;
-    height: 80px;
-    font-size: 1.3rem !important;
-  }
-
-  .validation-error {
-    margin-bottom: 2rem !important;
-    font-size: 1.3rem !important;
-  }
-
-  :host ::ng-deep .mdc-floating-label {
-    font-size: 1.3rem !important;
-  }
-
-  :host ::ng-deep .mat-mdc-form-field-error-wrapper {
-    font-size: 1.2rem !important;
-    padding: 8px 16px !important;
-  }
+.mat-form-field-outline-thick .mat-form-field-outline {
+  border-width: 2px;
+  border-color: #ccc;
+}
+.full-width-button {
+  width: 100px;
+  background-color: #273f41;
+  color: white;
 }
 
-@media (min-width: 2549px) and (max-width: 6000px) {
-  .signin-card {
-    font-size: 1.3rem;
-    height: 65vh;
-  }
-
-  .signin-card-title {
-    font-size: 2.7rem;
-  }
-
-  .signin-card-actions-btn {
-    font-size: 1.4rem !important;
-    padding: 1.9rem 2.7rem;
-  }
-
-  .input-full-width {
-    margin-bottom: 1.7rem !important;
-    height: 90px;
-    font-size: 1.4rem !important;
-  }
-
-  .validation-error {
-    margin-bottom: 2.1rem !important;
-    font-size: 1.4rem !important;
-  }
-
-  :host ::ng-deep .mdc-floating-label {
-    font-size: 1.4rem !important;
-  }
-
-  :host ::ng-deep .mat-mdc-form-field-error-wrapper {
-    font-size: 1.3rem !important;
-    padding: 12px 16px !important;
-  }
+.full-width-button:hover {
+  background-color: #02282b;
 }
-
-@media (min-width: 320px) and (max-width: 640px) {
-  .signin-card {
-    left: 0vw;
-    border-radius: 0 !important;
-    height: 50vh;
-    width: 100vw;
-    padding: 42px 8px;
-    min-width: unset !important;
-    min-height: 550px !important;
-  }
-
-  .signin-card-content {
-    margin-top: 1rem;
-  }
-
-  ::ng-deep .mat-mdc-card-content {
-    padding: 0 8px !important;
-  }
-} */
-
-
-
-
-
-
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
-  .login-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .logo {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    margin-left: 2px;
-  
-  }
-  
-  mat-card-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .mat-form-field {
-    width: 100%;
-  }
-  
-  .emailId,
-  .passwordId {
-    width: 100%;
-  }
-  
-  .remember-forgot-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .forgot-password {
-    cursor: pointer;
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  .forgot-password:hover {
-    text-decoration: underline;
-  }
-  
-  .sign-in-button-container {
-    margin-top: 20px;
-  }
-  
-  .sign-in-button-container button {
-    background-color: #273f41;
-    color: white;
-  }
-  
-  .sign-in-button-container button:hover {
-    background-color: #02282b;
-  }
-  
-  .sign {
-    margin-right: 85px;
-  }
-  
-  .mat-form-field-outline {
-    border-radius: 8px;
-  }
-  
-  .mat-form-field-outline-thick .mat-form-field-outline-start,
-  .mat-form-field-outline-thick .mat-form-field-outline-end {
-    border-radius: 8px;
-  }
-  
-  .mat-form-field-outline-thick .mat-form-field-outline {
-    border-width: 2px;
-    border-color: #ccc;
-  }

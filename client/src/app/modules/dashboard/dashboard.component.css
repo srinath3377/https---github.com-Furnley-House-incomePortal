@@ -2,9 +2,9 @@
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #d9dee2;
-    margin-top: 102px;
+    margin-top: 120px;
     position: relative;
-    margin-left: 250px;
+    margin-left: 290px;
 }
 
 .header {
@@ -53,7 +53,7 @@ h2 {
 .title {
     font-weight: bold;
     font-size: 1em;
-    margin-left: 18px;
+    /* margin-left: 18px; */
 }
 
 .footer-note {
@@ -71,6 +71,21 @@ h2 {
 .investment-forecaster .form-row mat-form-field {
     flex: 1 1 calc(50% - 20px);
     min-width: 200px; 
+}
+.lifetime{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 10px;
+}
+.lifetimelogo{
+    text-align: center; 
+    margin-top: 10px;
+}
+.button-container{
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: flex-end;
 }
 
 /* Adjust for smaller screens */
@@ -130,13 +145,17 @@ h2 {
 
 .large-icon {
    font-size: 64px;
-   width: auto; 
+   /* width: auto;  */
+   width: 47px;
    height:auto; 
    max-width :100%; 
+   margin-right: 210px;
+   color: rgb(211, 211, 63);
 }
 
 .icon-container {
    display:flex;
+   font-size: 15px;
    justify-content:center;
    align-items:center;
    min-width :64px;

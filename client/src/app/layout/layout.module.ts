@@ -5,25 +5,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
-import { DefaultComponent } from './components/default/default.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { LayoutRoutingModule } from './layout-routing.module';
+import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
@@ -31,35 +19,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     SidenavComponent,
-    LayoutComponent,
-    DefaultComponent
-  ],
+    LayoutComponent  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatGridListModule,
-    MatCheckboxModule,
     MatSidenavModule,
     MatListModule,
-    MatTabsModule,
-    MatProgressSpinnerModule,
-    MatSelectModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutRoutingModule
   ],
-  exports:[
-    HeaderComponent,
-    FooterComponent,
-    SidenavComponent,
-    LayoutComponent,
-    DefaultComponent
-  ]
+  providers: [],
 })
 export class LayoutModule { }

@@ -1,32 +1,37 @@
 <div class="login-container">
-    <mat-card class="login-card">
-      <img class="logo" mat-card-image src="assets/images/1000051980.jpg" alt="Furnley House Logo">
-      <mat-card-title class="sign">Sign in to your account</mat-card-title>
-      <mat-card-content>
-        <form>
-          <div class="form-group">
-            <div class="form-header">Email</div>
-            <mat-form-field class="emailId" appearance="outline">
-              <input matInput type="email" required>
-            </mat-form-field>
-          </div>
-  
-          <div class="form-group">
-            <div class="form-header">Password</div>
-            <mat-form-field class="passwordId" appearance="outline">
-              <input matInput type="password" required>
-            </mat-form-field>
-          </div>
-  
-          <div class="remember-forgot-container">
-            <mat-checkbox>Remember me</mat-checkbox>
-            <a class="forgot-password" routerLink="/forgot-password">Forgot Password?</a>
-          </div>
-  
-          <div class="sign-in-button-container">
-            <button mat-raised-button color="primary" (click)="navigateToHome()" type="button">Sign in</button>
-          </div>
-        </form>
-      </mat-card-content>
-    </mat-card>
-  </div>
+  <mat-card class="login-card">
+    <img class="logo" mat-card-image src="assets/images/FH_Logo.png" alt="Furnley House Logo">
+    <mat-card-title class="sign">Sign in to your account</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="signInForm" (ngSubmit)="navigateToHome()">
+        <div class="form-group">
+          <div class="form-header">Email</div>
+          <mat-form-field class="emailId" appearance="outline">
+            <input matInput formControlName="email" [(ngModel)]="email" name="email" type="email" required>
+            <mat-error *ngIf="signInForm.get('email')?.hasError('required') && signInForm.get('email')?.touched">
+              Email ID is required.
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <div class="form-header">Password</div>
+          <mat-form-field class="passwordId" appearance="outline">
+            <input matInput formControlName="password" [(ngModel)]="password" name="password" type="password" required>
+            <mat-error *ngIf="signInForm.get('password')?.hasError('required') && signInForm.get('password')?.touched">
+              Password is required.</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="remember-forgot-container">
+          <mat-checkbox>Remember me</mat-checkbox>
+          <a class="forgot-password" routerLink="/forgot-password">Forgot Password?</a>
+        </div>
+
+        <div class="sign-in-button-container">
+          <button mat-raised-button color="primary" class="full-width-button" type="submit">Sign in</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
